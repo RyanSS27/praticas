@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 750px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+            height: 1em;
+        }
+
+        .destaque {
+            background-color: #7be470c0;
+            color: black;
+        }
+
+        th {
+            background-color: #237a26;
+            color: white;
+        }
+
+        .valores {
+            text-align: right;
+        }
+
+        .quantidades {
+            text-align: center;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Grupo</th>
+                    <th>Produto</th>
+                    <th>Qtde.</th>
+                    <th>Valor Unid.</th>
+                    <th>Qtde. Vendida</th>
+                    <th>Valor total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup" class="destaque">Salgados</th>
+                    <td>Coxinha</td>
+                    <td class="quantidades">10</td>
+                    <td class="valores">4,50</td>
+                    <td class="quantidades">9</td>
+                    <td class="valores">40,50</td>
+                </tr>
+                <tr>
+                    <td>Rissole</td>
+                    <td class="quantidades">10</td>
+                    <td class="valores">5,00</td>
+                    <td class="quantidades">7</td>
+                    <td class="valores">35,00</td>
+                </tr>
+                <tr>
+                    <td>Bolinha de Queijo</td>
+                    <td class="quantidades">10</td>
+                    <td class="valores">4,00</td>
+                    <td class="quantidades">5</td>
+                    <td class="valores">20,00</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup" class="destaque">Doces</th>
+                    <td>Brigadeiro</td>
+                    <td class="quantidades">10</td>
+                    <td class="valores">3,25</td>
+                    <td class="quantidades">10</td>
+                    <td class="valores">32,50</td>
+                </tr>
+                <tr>
+                    <td>Beijinho</td>
+                    <td class="quantidades">10</td>
+                    <td class="valores">3,25</td>
+                    <td class="quantidades">7</td>
+                    <td class="valores">22,75</td>
+                </tr>
+                <tr>
+                    <td>Trufa</td>
+                    <td class="quantidades">10</td>
+                    <td class="valores">2,00</td>
+                    <td class="quantidades">10</td>
+                    <td class="valores">20,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="destaque">
+                    <th>Total</th>
+                    <td class="quantidades">6</td>
+                    <td class="quantidades">60</td>
+                    <td style="text-align: center;">---</td>
+                    <td class="quantidades">48</td>
+                    <td class="valores">170,75</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 750px;
+        }
+
+        td, th {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        .valores {
+            background-color: blue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col class="quantidades">
+            <col class="valores">
+            <col>
+            <col>
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Grupo</th>
+                <th>Produto</th>
+                <th>Qtde.</th>
+                <th>Valor Unid.</th>
+                <th>Qtde. Vendida</th>
+                <th>Valor total</th>
+            </tr>
+        </thead>
+
+
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Salgados</th>
+                <td>Coxinha</td>
+                <td>10</td>
+                <td>4,50</td>
+                <td>9</td>
+                <td>40,50</td>
+            </tr>
+            <tr>
+                <td>Rissole</td>
+                <td>10</td>
+                <td>5,00</td>
+                <td>7</td>
+                <td>35,00</td>
+            </tr>
+            <tr>
+                <td>Bolinha de Queijo</td>
+                <td>10</td>
+                <td>4,00</td>
+                <td>5</td>
+                <td>20,00</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Doces</th>
+                <td>Brigadeiro</td>
+                <td>10</td>
+                <td>3,25</td>
+                <td>10</td>
+                <td>32,5</td>
+            </tr>
+            <tr>
+                <td>Beijinho</td>
+                <td>10</td>
+                <td>3,25</td>
+                <td>7</td>
+                <td>22,75</td>
+            </tr>
+            <tr>
+                <td>Trufa</td>
+                <td>10</td>
+                <td>2,00</td>
+                <td>10</td>
+                <td>20,00</td>
+            </tr>
+        </tbody>
+
+
+
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <td>6</td>
+                <td>60</td>
+                <td>---</td>
+                <td>48</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
