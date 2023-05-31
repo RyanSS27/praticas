@@ -5,6 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            background-color: #e0e0e0;
+            margin: 0px;
+            color: white;
+        }   
+
+        main {
+            background-color: #313131;
+            max-width: 950px;
+            margin: 0px auto;
+            padding: 20px;
+            box-shadow: 0px 5px 12px 3px #00000083;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.7em;
+        }
+
+        p {
+            font-size: 1.1em;
+            text-indent: 30px;
+            text-align: justify;
+        }
+
         .container {
             overflow-x: auto;
         }
@@ -12,6 +41,8 @@
         table {
             border-collapse: collapse;
             width: 750px;
+            margin: auto;
+            position: relative;
         }
 
         td, th {
@@ -20,26 +51,41 @@
             height: 1em;
         }
 
-        .destaque {
-            background-color: #7be470c0;
-            color: black;
-        }
-
         th {
             background-color: #237a26;
             color: white;
+        }
+
+        td {
+            background-color: white;
+            color: black;
+        }
+
+        thead > tr{
+            position: sticky;
+            top: -1px;
+        }
+
+        th.destaque, .destaque > td {
+            background-color: #96e38d;
+            color: black;
         }
 
         .valores {
             text-align: right;
         }
 
-        /*
-        Código do cifrão: &#x24;
-        */
-
         .quantidades {
             text-align: center;
+        }
+
+        div.conteudo {
+            background-color: white;
+            color: black;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px 0px 0px 0px;
         }
 
         /*
@@ -49,83 +95,94 @@
     <title>Tabela de vendas</title>
 </head>
 <body>
-    <div class="container">
-        <table>
-            <colgroup>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>Grupo</th>
-                    <th>Produto</th>
-                    <th>Qtde.</th>
-                    <th>Valor Unid.</th>
-                    <th>Qtde. Vendida</th>
-                    <th>Valor total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th rowspan="3" scope="rowgroup" class="destaque">Salgados</th>
-                    <td>Coxinha</td>
-                    <td class="quantidades">10</td>
-                    <td class="valores">R&#x24; 4,50</td>
-                    <td class="quantidades">9</td>
-                    <td class="valores">R&#x24; 40,50</td>
-                </tr>
-                <tr>
-                    <td>Rissole</td>
-                    <td class="quantidades">10</td>
-                    <td class="valores">R&#x24; 5,00</td>
-                    <td class="quantidades">7</td>
-                    <td class="valores">R&#x24; 35,00</td>
-                </tr>
-                <tr>
-                    <td>Bolinha de Queijo</td>
-                    <td class="quantidades">10</td>
-                    <td class="valores">R&#x24; 4,00</td>
-                    <td class="quantidades">5</td>
-                    <td class="valores">R&#x24; 20,00</td>
-                </tr>
-                <tr>
-                    <th rowspan="3" scope="rowgroup" class="destaque">Doces</th>
-                    <td>Brigadeiro</td>
-                    <td class="quantidades">10</td>
-                    <td class="valores">R&#x24; 3,25</td>
-                    <td class="quantidades">10</td>
-                    <td class="valores">R&#x24; 32,50</td>
-                </tr>
-                <tr>
-                    <td>Beijinho</td>
-                    <td class="quantidades">10</td>
-                    <td class="valores">R&#x24; 3,25</td>
-                    <td class="quantidades">7</td>
-                    <td class="valores">R&#x24; 22,75</td>
-                </tr>
-                <tr>
-                    <td>Trufa</td>
-                    <td class="quantidades">10</td>
-                    <td class="valores">R&#x24; 2,00</td>
-                    <td class="quantidades">10</td>
-                    <td class="valores">R&#x24; 20,00</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr class="destaque">
-                    <th>Total</th>
-                    <td class="quantidades">6</td>
-                    <td class="quantidades">60</td>
-                    <td style="text-align: center;">---</td>
-                    <td class="quantidades">48</td>
-                    <td class="valores">R&#x24; 170,75</td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
+    <main>
+        <h1>Tabela criada com HTML5 e CSS3</h1>
+        <p>Essa tabela foi criada apenas com HTML5 e CSS3, só para a pática.</p>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Grupo</th>
+                        <th>Produto</th>
+                        <th>Qtde.</th>
+                        <th>Valor Unid.</th>
+                        <th>Qtde. Vendida</th>
+                        <th>Valor total</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th rowspan="3" scope="rowgroup" class="destaque">Salgados</th>
+                        <td>Coxinha</td>
+                        <td class="quantidades">10</td>
+                        <td class="valores">R&#x24; 4,50</td>
+                        <td class="quantidades">9</td>
+                        <td class="valores">R&#x24; 40,50</td>
+                    </tr>
+                    <tr>
+                        <td>Rissole</td>
+                        <td class="quantidades">10</td>
+                        <td class="valores">R&#x24; 5,00</td>
+                        <td class="quantidades">7</td>
+                        <td class="valores">R&#x24; 35,00</td>
+                    </tr>
+                    <tr>
+                        <td>Bolinha de Queijo</td>
+                        <td class="quantidades">10</td>
+                        <td class="valores">R&#x24; 4,00</td>
+                        <td class="quantidades">5</td>
+                        <td class="valores">R&#x24; 20,00</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3" scope="rowgroup" class="destaque">Doces</th>
+                        <td>Brigadeiro</td>
+                        <td class="quantidades">10</td>
+                        <td class="valores">R&#x24; 3,25</td>
+                        <td class="quantidades">10</td>
+                        <td class="valores">R&#x24; 32,50</td>
+                    </tr>
+                    <tr>
+                        <td>Beijinho</td>
+                        <td class="quantidades">10</td>
+                        <td class="valores">R&#x24; 3,25</td>
+                        <td class="quantidades">7</td>
+                        <td class="valores">R&#x24; 22,75</td>
+                    </tr>
+                    <tr>
+                        <td>Trufa</td>
+                        <td class="quantidades">10</td>
+                        <td class="valores">R&#x24; 2,00</td>
+                        <td class="quantidades">10</td>
+                        <td class="valores">R&#x24; 20,00</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr class="destaque">
+                        <th>Total</th>
+                        <td class="quantidades">6</td>
+                        <td class="quantidades">60</td>
+                        <td style="text-align: center;">---</td>
+                        <td class="quantidades">48</td>
+                        <td class="valores">R&#x24; 170,75</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <p>Tente rolar a página para observar como ela se comporta.</p>
+
+        <div class="conteudo">
+            <h2>Assunto super interessante</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque similique ut vel tempore optio? Optio quia doloribus quisquam tempora esse, cupiditate, repellendus rerum officiis magnam repellat non inventore. Numquam, culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, reiciendis. Dolore sint distinctio aut voluptatibus totam accusamus reprehenderit, veritatis aliquid. Consequuntur repellendus neque eos sapiente delectus saepe harum iusto quaerat.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, suscipit similique. Molestiae, dicta adipisci minima aperiam accusantium, sequi ab distinctio itaque natus facilis esse rerum aut, delectus ut rem qui.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque similique ut vel tempore optio? Optio quia doloribus quisquam tempora esse, cupiditate, repellendus rerum officiis magnam repellat non inventore. Numquam, culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, reiciendis. Dolore sint distinctio aut voluptatibus totam accusamus reprehenderit, veritatis aliquid. Consequuntur repellendus neque eos sapiente delectus saepe harum iusto quaerat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque similique ut vel tempore optio? Optio quia doloribus quisquam tempora esse, cupiditate, repellendus rerum officiis magnam repellat non inventore. Numquam, culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, reiciendis. Dolore sint distinctio aut voluptatibus totam accusamus reprehenderit, veritatis aliquid. Consequuntur repellendus neque eos sapiente delectus saepe harum iusto quaerat.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, suscipit similique. Molestiae, dicta adipisci minima aperiam accusantium, sequi ab distinctio itaque natus facilis esse rerum aut, delectus ut rem qui.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque similique ut vel tempore optio? Optio quia doloribus quisquam tempora esse, cupiditate, repellendus rerum officiis magnam repellat non inventore. Numquam, culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, reiciendis. Dolore sint distinctio aut voluptatibus totam accusamus reprehenderit, veritatis aliquid. Consequuntur repellendus neque eos sapiente delectus saepe harum iusto quaerat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque similique ut vel tempore optio? Optio quia doloribus quisquam tempora esse, cupiditate, repellendus rerum officiis magnam repellat non inventore. Numquam, culpa? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, reiciendis. Dolore sint distinctio aut voluptatibus totam accusamus reprehenderit, veritatis aliquid. Consequuntur repellendus neque eos sapiente delectus saepe harum iusto quaerat.</p>
+        </div>
+    </main>
 </body>
 </html>
