@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+div.parte {
+    background: linear-gradient(to left, purple, #2b0043), url(../imagens/dest02-sofa.png) center/ contain no-repeat;
+    height: 800px;
+}
