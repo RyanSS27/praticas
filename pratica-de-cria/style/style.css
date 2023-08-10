@@ -1,6 +1,127 @@
 @charset "UTF-8";
 
+* {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+:root {
+    --header: #F5F7F7;
+    --fundo: #FFFFFF;
+    --fundo-destaque: #EFF1F7;
+
+    --color-header: #3E3E3E;
+
+    --analoga: #FE9C00;
+
+    --botao01: #098E00;
+
+    --cor-principal01: #02019D;
+    --cor-principal02: #2730A5;
+    --cor-principal03: #292FCC;
+
+    --degrade01: #1F4F8D;
+    --degrade02: #6780B6;
+    --degrade03: #A6A5CF;
+    --degrade04: #9A78B5;
+    --degrade05: #793D7C;
+}
+
+:root {
+    --font-padrao: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: #F5F7F7;
+    color: var(--color-header);
+}
+
+header > .nav-superior {
+    font-size: small;
+    text-align: right;
+
+    padding: 15px 0px 0px 0px;
+
+    display: block;
+}
+
+.nav-superior img {
+    height: 16px;
+    margin-right: 8px;
+}
+
+.nav-superior span {
+    margin: 0px 10px;
+}
+
+.nav-superior span.nada {
+    min-width: 160px;
+    display: inline-block;
+}
+
+.divisao-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.reparticao01 {
+    width: 290px;
+
+    display: inline-block;
+}
+
+.reparticao02 {
+    padding: 28px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.reparticao02 > span, .reparticao02 span {
+    margin: 0px 25px;
+}
+
+.reparticao02 > span > img {
+    margin-right: 8px;
+}
+
+sup {
+    font-size: 1em;
+}
+
+span.botao01 {
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+
+    display: table;
+}
+
+.botao01 > span.centralizar {
+    background-color: #098E00;
+    color: #fff;
+    text-align: center;
+    font: normal normal 0.8em var(--font-padrao);
+
+    border-radius: 15px;
+
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+
+
+
 div.parte {
-    background: linear-gradient(to left, purple, #2b0043), url(../imagens/dest02-sofa.png) center/ contain no-repeat;
+    background-image: linear-gradient(to right, var(--degrade01), var(--degrade02), var(--degrade03), var(--degrade04), var(--degrade05));
     height: 800px;
 }
