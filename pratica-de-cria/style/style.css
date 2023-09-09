@@ -38,6 +38,7 @@
 header {
     background-color: #F5F7F7;
     color: var(--color-header);
+    max-width: 2000px;
 }
 
 header > .nav-superior {
@@ -64,41 +65,51 @@ header > .nav-superior {
 }
 
 .divisao-header {
+    padding: 0px 60px;
+
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .reparticao01 {
+    margin: 0px 65px;
     width: 290px;
-
     display: inline-block;
 }
 
 .reparticao02 {
-    padding: 28px 0px;
+    padding: 26px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }
 
-.reparticao02 > span, .reparticao02 span {
-    margin: 0px 25px;
+nav.nav-inferior > span {
+    min-width: 100px;
+
+    display: inline;
 }
 
-.reparticao02 > span > img {
+.reparticao02 > nav > span > img {
     margin-right: 8px;
 }
 
-sup {
-    font-size: 1em;
+.nav-inferior {
+    margin: 0px 25px;
+    text-align: center;
+}
+
+.nav-inferior > span {
+    margin: 0px 25px 0px 0px;
 }
 
 span.botao01 {
-    width: 150px;
-    height: 30px;
+    font-size: small;
+    min-width: 120px;
+    height: 33px;
     border-radius: 15px;
 
     display: table;
