@@ -12,22 +12,33 @@
             margin: 0px;
         }
 
+        body {
+            background: #242424 url(sol.jpg
+            ) center center / cover no-repeat fixed;
+        }
+
 
         form {
+            background-color: #000000a2;
+            color: whitesmoke;
             max-width: 380px;
             margin: auto;
             padding: 15px;
 
-            border: 1px solid gray;
+            border: 1px solid #ffcafb;
             border-radius: 15px;
             box-sizing: border-box;
+            box-shadow: 2px 4px 4px 1px #00000088;
+
         }
 
         h1 {
+            color: #ffcafb;
             text-align: center;
         }
 
         p.texto > input {
+            background-color: #ffffff;
             width: 340px;
         }
     </style>
@@ -52,9 +63,9 @@
 
 
         <p>Gênero: <br>
-            <input type="radio" name="opcoes" id="genero">Masculino
-            <input type="radio" name="opcoes" id="genero">Feminino
-            <input type="radio" name="opcoes" id="genero">Prefiro não informar
+            <input type="radio" name="opcoes" id="genero" required>Masculino
+            <input type="radio" name="opcoes" id="genero" required>Feminino
+            <input type="radio" name="opcoes" id="genero" required>Prefiro não informar
         </p>
 
         
